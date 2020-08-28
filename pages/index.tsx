@@ -4,6 +4,7 @@ import GlobalStyles from '../components/GlobalStyles';
 import questions from '../questions.json';
 import dynamic from 'next/dynamic';
 
+// this makes the question be chosen only one time, in client side
 const RandomPoll = dynamic(() => import('../components/RandomPoll'), {
   ssr: false,
 });
