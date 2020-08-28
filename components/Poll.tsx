@@ -1,14 +1,14 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { QandAsDocument } from '../types';
+import { QandA } from '../types';
 
 type Props = {
-  qandas: QandAsDocument /* q and a's -- questions and answers document */;
+  qanda: QandA /* q and a -- question and answer */;
 };
 
 const PollWrapper = styled.div``;
 
-export default function Poll({ qandas }: Props) {
-  console.log('questions and answers: ', qandas);
+export default function Poll({ qanda }: Props) {
+  console.log('selected question: ', qanda);
   return <PollWrapper>The Poll implementation goes here</PollWrapper>;
 }
