@@ -18,8 +18,6 @@ const AnswersVotes = styled.div`
 `;
 
 export default function PollAnswerList({ answers, selected, onSelect }: Props) {
-  console.log('answers: ', selected);
-
   let totalVotes = answers.reduce((p, c) => p + c.votes, 0);
   let maxVotes = answers.reduce((a, b) => (a.votes > b.votes ? a : b)).votes;
 

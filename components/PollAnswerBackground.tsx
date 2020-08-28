@@ -34,7 +34,6 @@ const StyledAnswerBackground = styled(AnswerBackground)<Props>`
 `;
 
 export default function PollAnswerBackground({ value, cyan, open }: Props) {
-  console.log('Value:', value);
   return (
     <StyledAnswerBackground
       value={value}
